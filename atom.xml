@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>红拂夜奔的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="/"/>
+  <updated>2019-05-17T09:16:07.511Z</updated>
+  <id>/</id>
+  
+  <author>
+    <name>王二</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>组件类和容器类</title>
+    <link href="/2019/05/17/%E7%BB%84%E4%BB%B6%E7%B1%BB%E5%92%8C%E5%AE%B9%E5%99%A8%E7%B1%BB/"/>
+    <id>/2019/05/17/组件类和容器类/</id>
+    <published>2019-05-17T09:10:58.000Z</published>
+    <updated>2019-05-17T09:16:07.511Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-组件的概念"><a href="#1-组件的概念" class="headerlink" title="1.组件的概念"></a>1.组件的概念</h1><p>组件(component)是构成图形用户界面的基本成分和核心元素，组件类(Component)是一个抽象类，是AWT组件类的根类，实际使用的组件都是Component的子类。Component类提供对组件操作的通用方法，包括设计组件位置，设置组件大小，设计组件字体，响应鼠标或键盘事件，组件重绘等</p><hr><h1 id="2-容器"><a href="#2-容器" class="headerlink" title="2.容器"></a>2.容器</h1><p>   容器(container)是一种特殊组件，他能容纳其他组件。它在可视区域内显示其他组件。由于容器是组件，在容器中还可以放置其他容器，所以可以使用多层容器构成富有变化的界面。</p><hr><h1 id="3-窗口和面板"><a href="#3-窗口和面板" class="headerlink" title="3.窗口和面板"></a>3.窗口和面板</h1><p>   容器有两种：窗口(window)和面板(panel).</p><p>   窗口可独立存在，可被移动，也可被最大化和最小化，有标题栏，边框，可添加菜单栏。面板不能独立存在，必须包含在另一个容器中，面板没有标题。没有边框，不可以添加菜单栏，一个窗口可以包含多个面板，一个面板也可以包含另一个面板，但面板不能包含窗口。</p><p>   窗口类和面板类都是容器类的子类。</p><hr><h1 id="4-框架与对话框"><a href="#4-框架与对话框" class="headerlink" title="4.框架与对话框"></a>4.框架与对话框</h1><p>   窗口类(Window)主要有两个子类：框架类(Frame)和对话框类(Dialog)。</p><p>   框架是一种带标题栏并且可以改变的大小的窗口，在应用程序中，使用框架作为容器，在框架中放置组件。框架类在实例化时默认是最小化的，不可见的，必须通过setSize()方法设置框架大小，通过setVisible()方法使框架可见。</p><hr><h1 id="5-标签"><a href="#5-标签" class="headerlink" title="5.标签"></a>5.标签</h1><p>   标签类(Label)组件用于显示一行文本信息。标签只能显示信息，不能用于输入。</p><hr><h1 id="6-按钮"><a href="#6-按钮" class="headerlink" title="6.按钮"></a>6.按钮</h1><p>   按钮(button)是最常用的组件，用来控制程序的运行方向，用户单击按钮时，计算机将执行一系列命令，完成一系列功能。按钮通过java.awt的<br>   Button类创建。</p><hr><h1 id="7-文本编辑组件"><a href="#7-文本编辑组件" class="headerlink" title="7.文本编辑组件"></a>7.文本编辑组件</h1><p>   文本编辑组件有文本行和文本区。</p><p>   文本行是一个单行文本编辑框，用于输入一行文字。文本行由java.awt包中的TextField类来创建。</p><hr><h1 id="8-Swing组件按功能可分为如下几类"><a href="#8-Swing组件按功能可分为如下几类" class="headerlink" title="8.Swing组件按功能可分为如下几类:"></a>8.Swing组件按功能可分为如下几类:</h1><ul><li>1、顶层容器:JFrame, JApplet, JDialog和JWindow。</li><li>2、中间容器:JPanel, JScrollPane, JSplitPane, JTooIBar等。</li><li>3、特殊容器:在用户界面上具有特殊作用的中间容器，如JlnternalFrame、JRootPane、JLayeredPane和JDestopPane等。</li><li>4、基本组件:实现人机交互的组件，如Button、 JComboBox、Just, Menu、Mider等。</li><li>5、不可编辑信息的显示组件:向用户显示不可编辑信息的组件，如JLabel、JProgressBar和JTooITip等。</li><li>6、可编辑信息的显示组件:向用户显示能被编辑的格式化信息的组件，如JTable、JTextArea和JTextField等。</li><li>7、特殊对话框组件:可以直接产生特殊对话框的组件，如JColorChoosor和JFileChooser等。</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      组件类和容器类的解释
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="java" scheme="/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>选择排序</title>
+    <link href="/2019/05/17/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
+    <id>/2019/05/17/选择排序/</id>
+    <published>2019-05-17T08:58:06.000Z</published>
+    <updated>2019-05-17T09:08:33.163Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一-选择排序和冒泡排序的区别"><a href="#一-选择排序和冒泡排序的区别" class="headerlink" title="一.选择排序和冒泡排序的区别"></a>一.选择排序和冒泡排序的区别</h3><hr><ul><li>1.冒泡排序是比较相邻位置的两个数，二选择排序是按顺序比较，找最大或者最小值。</li><li>2.冒泡排序每一轮比较后，位置不对的都需要换位置，选择排序每一轮比较只需要换一次位置。</li><li>3.冒泡排序是通过数找位置，选择排序是给定位置去找数。<h3 id="二-冒泡排序优缺点"><a href="#二-冒泡排序优缺点" class="headerlink" title="二.冒泡排序优缺点"></a>二.冒泡排序优缺点</h3></li></ul><hr><ul><li>1.优点：比较简单，空间复杂度低，是稳定的。</li><li>2。缺点：时间复杂度太高，效率慢。<h3 id="三。选择排序优缺点"><a href="#三。选择排序优缺点" class="headerlink" title="三。选择排序优缺点"></a>三。选择排序优缺点</h3></li></ul><hr><ul><li>1.优点：一轮只需要换一次位置</li><li>2.缺点：效率慢，不稳定（举个例子5，8，5，2，9我们我知道第一遍选择第一个元素5会和2交换，那么原序列中2个5的相对位置前后顺序就被破坏了）。</li></ul><hr><p><strong>这是相对简单的版本，他把最小的放在了新列表里面；还有一种做法就是把比较出来的最小值和被比较的位置交换</strong></p><hr><pre><code>def findSamllest(arr)://找最小值    smallest = arr[0]    smallest_index = 0    for i in range(1,len(arr)):        if arr[i] &lt; smallest:            smallest = arr[i]            smallest_index = i    return  smallest_indexdef selectionSort(arr)://找到最小值并且插入到新列表    newArr = []    for i in range(len(arr)):        smallest = findSamllest(arr)        newArr.append(arr.pop(smallest))    return newArrif __name__ == &#39;__main__&#39;:    print(selectionSort([5, 3, 6, 3, 2, 10]))</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      选择排序代码示例和解析
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="数据结构" scheme="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二分查找.md</title>
+    <link href="/2019/05/13/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
+    <id>/2019/05/13/二分查找/</id>
+    <published>2019-05-13T13:01:03.000Z</published>
+    <updated>2019-05-17T09:09:53.883Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h2><hr><ul><li><p>代码示例</p><pre><code>def binary_search(list,item):  low = 0  high = len(list) - 1  while low &lt;= high:      mid = int((low + high)/2) //这里需要注意floa和int转型      guess = list[mid]      if guess == item:          return mid      if guess &gt; mid:          high = mid - 1      else:          low = mid + 1  return Noneif __name__ == &#39;__main__&#39;:  my_list = [1,2,3]  print(my_list)  print(binary_search(my_list,1))</code></pre></li></ul><hr><h6 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h6>]]></content>
+    
+    <summary type="html">
+    
+      二分查找代码示例和解析
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="数据结构" scheme="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+</feed>
