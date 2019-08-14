@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-08-11T11:26:32.124Z</updated>
+  <updated>2019-08-14T06:35:41.701Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>A+B Problem</title>
+    <link href="/2019/08/14/A-B-Problem/"/>
+    <id>/2019/08/14/A-B-Problem/</id>
+    <published>2019-08-14T06:34:07.000Z</published>
+    <updated>2019-08-14T06:35:41.701Z</updated>
+    
+    <content type="html"><![CDATA[<center>A + B Problem</center><h2 id="问题-输入两个整数A和B-求他们的和-但不能使用-等数学运算符"><a href="#问题-输入两个整数A和B-求他们的和-但不能使用-等数学运算符" class="headerlink" title="问题:输入两个整数A和B, 求他们的和 但不能使用 + 等数学运算符"></a>问题:输入两个整数A和B, 求他们的和 但不能使用 + 等数学运算符</h2><h3 id="输入格式-输入两个整数A-B，用空格隔开，0≤A-B≤10-8"><a href="#输入格式-输入两个整数A-B，用空格隔开，0≤A-B≤10-8" class="headerlink" title="输入格式: 输入两个整数A,B，用空格隔开，0≤A,B≤10^8"></a>输入格式: 输入两个整数A,B，用空格隔开，0≤A,B≤10^8</h3><h3 id="输出格式-输出一个整数，表示这两个数的和"><a href="#输出格式-输出一个整数，表示这两个数的和" class="headerlink" title="输出格式: 输出一个整数，表示这两个数的和"></a>输出格式: 输出一个整数，表示这两个数的和</h3><h3 id="样例输入-3-4"><a href="#样例输入-3-4" class="headerlink" title="样例输入: 3 4"></a>样例输入: <code>3</code> <code>4</code></h3><h3 id="样例输出-7"><a href="#样例输出-7" class="headerlink" title="样例输出: 7"></a>样例输出: <code>7</code></h3><h3 id="说明-不能使用算术运算符"><a href="#说明-不能使用算术运算符" class="headerlink" title="说明:不能使用算术运算符"></a>说明:<em>不能使用算术运算符</em></h3><hr><p>解题思路:</p><pre><code>首先想到的是异或运算，如二进制的11^10=01，每一位异或都相对于每一位的加法，但是缺乏进位。使用按位与“&amp;”运算可以帮助我们判断该位是否有进位。如11&amp;11 =11，说明两位在加运算中都产生了进位1。由于该进位是加在高位上的，所以把与运算的结果往左移一位，再和异或结果相加，即为最后结果。 </code></pre><p>C++代码:</p><pre><code>#include&lt;iostream&gt;using namespace std;int aplusb(int a,int b){    if(b == 0)        return a;    else        return aplusb(a^b,(a&amp;b)&lt;&lt;1);}//终结条件:递归基变为零停止，也就是b == 0;int main(int argc, char const *argv[]){    int a, b;    cin &gt;&gt; a &gt;&gt; b;    cout &lt;&lt; aplusb(a,b) &lt;&lt; endl;    system(&quot;pause&quot;);    /* code */    return 0;}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;center&gt;A + B Problem&lt;/center&gt;
+
+&lt;h2 id=&quot;问题-输入两个整数A和B-求他们的和-但不能使用-等数学运算符&quot;&gt;&lt;a href=&quot;#问题-输入两个整数A和B-求他们的和-但不能使用-等数学运算符&quot; class=&quot;headerlink&quot; title
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="数据结构" scheme="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown使用方法</title>
